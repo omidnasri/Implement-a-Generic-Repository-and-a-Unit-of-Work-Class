@@ -9,12 +9,10 @@
         /// 
         /// </summary>
         public const string Email = @"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*";
-
         /// <summary>
         /// 
         /// </summary>
         public const string CharacterAndNumber = @"[A-Za-z][A-Za-z0-9._]{3,14}";
-
         /// <summary>
         /// 
         /// </summary>
@@ -27,12 +25,10 @@
         /// 
         /// </summary>
         public const string Number = "^[0-9]*$";
-
         /// <summary>
         ///  
         /// </summary>
         public const string PersianDate = @"^[1-4]\d{3}\/((0?[1-6]\/((3[0-1])|([1-2][0-9])|(0?[1-9])))|((1[0-2]|(0?[7-9]))\/(30|([1-2][0-9])|(0?[1-9]))))$";
-
         /// <summary>
         /// 
         /// </summary>

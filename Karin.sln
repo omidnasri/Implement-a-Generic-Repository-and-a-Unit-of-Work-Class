@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Karin.Web", "Karin.Web\Kari
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App_GlobalResource", "App_GlobalResource\App_GlobalResource.csproj", "{99B2DFFF-E9E3-4C23-9B52-EDEC41F80629}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Karin.HandleException", "Karin.HandleException\Karin.HandleException.csproj", "{31D8002B-9C0F-49A4-AB3F-459D80CBA3B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{99B2DFFF-E9E3-4C23-9B52-EDEC41F80629}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99B2DFFF-E9E3-4C23-9B52-EDEC41F80629}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99B2DFFF-E9E3-4C23-9B52-EDEC41F80629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31D8002B-9C0F-49A4-AB3F-459D80CBA3B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D8002B-9C0F-49A4-AB3F-459D80CBA3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D8002B-9C0F-49A4-AB3F-459D80CBA3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D8002B-9C0F-49A4-AB3F-459D80CBA3B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
