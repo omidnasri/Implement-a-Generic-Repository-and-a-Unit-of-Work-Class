@@ -35,7 +35,35 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -50,7 +78,54 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Karin.Web\Controllers\HomeControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App_GlobalResource\App_GlobalResource.csproj">
+      <Project>{99b2dfff-e9e3-4c23-9b52-edec41f80629}</Project>
+      <Name>App_GlobalResource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Karin.BaseConfig\Karin.BaseConfig.csproj">
+      <Project>{f4086a94-545d-42ab-8a42-d5e7e88ad98a}</Project>
+      <Name>Karin.BaseConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Karin.DataAccess\Karin.DataAccess.csproj">
+      <Project>{849bc028-38d5-46ac-a68a-53960a830e1c}</Project>
+      <Name>Karin.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Karin.DomainService\Karin.DomainService.csproj">
+      <Project>{b96bfe42-beb2-4d5f-9242-76653815a4c5}</Project>
+      <Name>Karin.DomainService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Karin.Domain\Karin.Domain.csproj">
+      <Project>{e33768f3-efd7-4eb9-bfe8-d8ea184d3d15}</Project>
+      <Name>Karin.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Karin.Mapper\Karin.Mapper.csproj">
+      <Project>{7b449002-55ae-48b9-a584-dffeb22b40d6}</Project>
+      <Name>Karin.Mapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Karin.Models\Karin.Models.csproj">
+      <Project>{2acd0942-2744-40fb-8527-b16f24cf1bd9}</Project>
+      <Name>Karin.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Karin.Operation\Karin.Operation.csproj">
+      <Project>{28b8baba-5a7d-4ebe-9c3d-6d6850394f0d}</Project>
+      <Name>Karin.Operation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Karin.Web\Karin.Web.csproj">
+      <Project>{abbf4cd0-ebff-47ea-9d61-a25f520c0d6f}</Project>
+      <Name>Karin.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Karin\Karin.csproj">
+      <Project>{8703ddc3-37a2-41a1-973c-7d2bd58ca50a}</Project>
+      <Name>Karin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
