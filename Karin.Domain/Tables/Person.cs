@@ -12,6 +12,9 @@ namespace Karin.Domain.Tables
     public class Person : Inherit.BaseEntity, Interface.IEntity
     {
         #region Properties
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
         /// <summary>
         /// نام
         /// </summary>

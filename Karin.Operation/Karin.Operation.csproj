@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\TCI\Operation\bin\Debug\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Mapper">
+      <HintPath>..\..\TCI\Operation\bin\Debug\Mapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,6 +63,9 @@
       <Project>{2acd0942-2744-40fb-8527-b16f24cf1bd9}</Project>
       <Name>Karin.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

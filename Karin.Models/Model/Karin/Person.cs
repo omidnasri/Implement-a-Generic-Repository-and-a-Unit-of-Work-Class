@@ -12,6 +12,12 @@ namespace Karin.Models.Model.Karin
     {
         #region Properties
         /// <summary>
+        /// 
+        /// </summary>
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+        /// <summary>
         /// نام
         /// </summary>
         [StringLength(maximumLength: 50, MinimumLength = 3), Required]

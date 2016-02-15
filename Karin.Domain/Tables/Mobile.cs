@@ -11,6 +11,9 @@ namespace Karin.Domain.Tables
     public class Mobile: Inherit.BaseEntity, Interface.IEntity
     {
         #region Properties
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
         /// <summary>
         /// شماره تلفن
         /// </summary>

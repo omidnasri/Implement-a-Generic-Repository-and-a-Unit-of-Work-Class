@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Karin.Mapper.Karin
 {
-    public class MobileMapper : BaseMapper<Domain.Tables.Mobile, Model.Station>
+    /// <summary>
+    /// 
+    /// </summary>
+    public class MobileMapper : BaseMapper<Domain.Tables.Mobile, Models.Model.Karin.Mobile>
     {
     }
 }
