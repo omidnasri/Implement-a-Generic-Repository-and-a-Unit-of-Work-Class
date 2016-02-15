@@ -1,14 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Karin.Domain.Tables
+namespace Karin.Models.Model.Karin
 {
-    /// <summary>
-    /// جدول موبایل
-    /// </summary>
-    [Table(name: "Mobile", Schema = BaseConfig.DefaultValue.Schema)]
-    public class Mobile: Inherit.BaseEntity, Interface.IEntity
+    public class Mobile : BaseModel
     {
         #region Properties
         /// <summary>

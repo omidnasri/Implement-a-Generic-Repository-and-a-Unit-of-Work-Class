@@ -40,7 +40,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseOperation.cs" />
+    <Compile Include="IBaseOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Karin.DomainService\Karin.DomainService.csproj">
+      <Project>{b96bfe42-beb2-4d5f-9242-76653815a4c5}</Project>
+      <Name>Karin.DomainService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Karin.Domain\Karin.Domain.csproj">
+      <Project>{e33768f3-efd7-4eb9-bfe8-d8ea184d3d15}</Project>
+      <Name>Karin.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Karin.Models\Karin.Models.csproj">
+      <Project>{2acd0942-2744-40fb-8527-b16f24cf1bd9}</Project>
+      <Name>Karin.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
